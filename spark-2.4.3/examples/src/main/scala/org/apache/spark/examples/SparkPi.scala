@@ -34,8 +34,6 @@ object SparkPi {
     val slices = if (args.length > 0) args(0).toInt else 2
     val n = math.min(100000L * slices, Int.MaxValue).toInt // avoid overflow
     /**
-     * helm
-     *
      * 并行化数据集得到RDD，并执行各种计算，得到结果集RDD
      * count 存在于driver端
      * 1、spark.sparkContext spark初始化
