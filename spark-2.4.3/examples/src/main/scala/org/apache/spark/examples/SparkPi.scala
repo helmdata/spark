@@ -25,7 +25,7 @@ import org.apache.spark.sql.SparkSession
 /** Computes an approximation to pi */
 object SparkPi {
   def main(args: Array[String]) {
-    // 获取编程入口
+    // helm 获取编程入口
     val spark = SparkSession
       .builder
       .appName("Spark Pi")
